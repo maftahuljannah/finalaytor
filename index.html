@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- roboto fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- fontwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick slider -->
+     <link rel="stylesheet" href="./asstes/css/slick.min.css">
+    <!-- fontawsome -->
+     <link rel="stylesheet" href="./asstes/css/fontawesome.min.css">
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
+    <!-- custom css -->
+     <link rel="stylesheet" href="./asstes/css/style.css">
+     <!-- responsive css -->
+      <link rel="stylesheet" href="./asstes/css/responsive.css">
+</head>
+<body>
+    <!-- ============== NAV start =========== -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./asstes/images/Logo (1).png" alt="">
+          </a>
+          <span class="navbar-toggler"  class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <span><i class="fa-solid fa-bars-staggered"></i></span>
+        </span>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto mb-2">
+              <li class="nav-item">
+                <a class="home-active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="" aria-current="page" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Pages</a>
+              </li>
+             <li>
+                <a class=" aria-current="page" href="#" class="dropdown-toggle" href="#"data-bs-toggle="dropdown" aria-expanded="false">Features <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown">
+                  
+                  <ul class="dropdown-menu">
+                
+                    <li><a class="dropdown-item" href="#">Oily</a></li>
+                    <li><a class="dropdown-item" href="#">Dry</a></li>
+                    <li><a class="dropdown-item" href="#">Combination</a></li>
+                    <li><a class="dropdown-item" href="#">Sensitive</a></li>
+                    <li><a class="dropdown-item" href="#">Normal</a></li>
+                    <li><a class="dropdown-item" href="#">Cleanser</a></li>
+                    <li><a class="dropdown-item" href="#">Moisturizer</a></li>
+                    <li><a class="dropdown-item" href="#">Sunscreen</a></li>
+                   
+                  </ul>
+                </div>
+          
+
+
+              </li>
+              <li class="nav-item">
+                <a  aria-current="page" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a aria-current="page" href="#">contact</a>
+              </li>
+            
+            </ul>
+
+             <!-- ICON ul -->
+              <ul class="icons">
+             <li class="search-icon"><a href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a></li>
+             <li><a href="#"><span><i class="fa-regular fa-user"></i></span></a></li>
+             <li><a href="#"><span><i class="fa-regular fa-heart"></i></span></a></li>
+             <li><a href="#"><span><i class="fa-solid fa-bag-shopping"></i></span>
+                <span>0</span>
+            </a></li>
+             
+            </ul>
+          </div>
+        </div>
+<!-- ======= SCROLL INDICATOR ======= -->
+        <div class="scroll-indicator">
+        
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+
+<!-- SCROLL INDICATOR END -->
+      </nav>
+
+       <!-- ==============Search-body start =========== -->
+        <div class="search-body">
+            <form action="" class="search-form">
+                <input  placeholder="search here" ="text">
+                <button>search</button>
+            </form>
+            <div class="cross-btn">
+                <span><i class="fa-solid fa-x"></i></span>
+            </div>
+        </div>
+      <!-- =============Search-body end ============= -->
+        <!-- ============== OFFCANVAS start =========== -->
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <li><a href="#"><span><i class="fa-solid fa-house"></i></span> Home</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-shop"></i></span>shop</a></li>
+              <li><a href="#"><span><i class="fa-brands fa-pagelines"></i></span>pages</a></li>
+              <li><a href="#" class="dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false"><span><i class="fa-solid fa-house-laptop"></i></span>Feature</a>
+                <div class="dropdown">
+                 
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Oily</a></li>
+                    <li><a class="dropdown-item" href="#">Dry</a></li>
+                    <li><a class="dropdown-item" href="#">Combination</a></li>
+                    <li><a class="dropdown-item" href="#">Sensitive</a></li>
+                    <li><a class="dropdown-item" href="#">Normal</a></li>
+                    <li><a class="dropdown-item" href="#">Cleanser</a></li>
+                    <li><a class="dropdown-item" href="#">Moisturizer</a></li>
+                    <li><a class="dropdown-item" href="#">Sunscreen</a></li>
+                   
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><span><i class="fa-brands fa-blogger"></i></span>Blogs</a></li>
+              <li><a href="#"><span><i class="fa-regular fa-address-book"></i></span>Contact</a></li>
+            </ul>
+          </div>
+
+            </div>
+          </div>
+        </div>
+       <!-- ============= OFFCANVAS end ============= -->
+
+         <!-- ============== NAVFOOTER start for mobile=========== -->
+         <section class="search-footer d-lg-none">
+          <div class="container">
+            <div class="col-2 mx-auto text-center">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>  
+            </div>
+          </div>
+         </section>
+          <!-- ============= NAVFOOTER end ============= -->
+
+     <!-- ============= NAV end ============= -->
+
+      <!-- ============== BANNER1 start =========== -->
+<section id="banner">
+  <div class="parent">
+    <div class="slider" style="background-image: url(./asstes/images/banner1.jpg);">
+      <div class="container">
+        <h4>Mega Sale</h4>
+        <h2>Up To 35% Off</h2>
+        <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+        <div class="banner-btn">
+          <a href="#">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="slider" style="background-image: url(./asstes/images/banner2.jpg);">
+      <div class="container">
+        <h4>Mega Sale</h4>
+        <h2>Up To 35% Off</h2>
+        <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+        <div class="banner-btn">
+          <a href="#">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider" style="background-image: url(./asstes/images/banner3.jpg);">
+      <div class="container">
+        <h4>Mega Sale</h4>
+        <h2>Up To 35% Off</h2>
+        <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+        <div class="banner-btn">
+          <a href="#">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider" style="background-image: url(./asstes/images/banner4.jpg);">
+      <div class="container">
+        <h4>Mega Sale</h4>
+        <h2>Up To 35% Off</h2>
+        <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+        <div class="banner-btn">
+          <a href="#">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider" style="background-image: url(./asstes/images/banner5.jpg);">
+      <div class="container">
+        <h4>Mega Sale</h4>
+        <h2>Up To 35% Off</h2>
+        <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+        <div class="banner-btn">
+          <a href="#">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider" style="background-image: url(./asstes/images/banner6.jpg);">
+      <div class="container">
+        <h4>Mega Sale</h4>
+        <h2>Up To 35% Off</h2>
+        <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+        <div class="banner-btn">
+          <a href="#">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+     <!-- =============BANNER1 end ============= -->
+
+      <!-- ============== CREAM start =========== -->
+       <section id="beauty">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5  col-md-6 col-sm-12">
+          <div class="image">
+            <img src="./asstes/images/cream image/Image here.png" alt="Beauty Cream Image" class="img-fluid">
+            <div class="contains text-center">
+              <h3>Beauty Cream</h3>
+              <p>Shop now <i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+
+          <div class="image mt-3">
+            <img src="./asstes/images/cream image/Item 3.png" alt="Beauty Cream" class="img-fluid">
+            <div class="contains text-center">
+              <h3>Beauty Cream</h3>
+              <p>Shop now <i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-7 col-md-9 col-sm-12">
+
+          <div class="image mx-lg-4 mx-md-3 mx-sm-2">
+            <img src="./asstes/images/cream image/Item 2.png" alt="Beauty Cream" class="img-fluid">
+            <div class="contains text-center">
+              <h3 class="my-3">Beauty Cream</h3>
+              <p  class="shop-now">Shop now <i class="fa-solid fa-arrow-right-long"></i></p>
+            </div>
+          </div>
+
+            </div> 
+            
+
+
+          </div>
+        </div>
+       </section>
+     <!-- ============= CREAM end ============= -->
+       <!-- ============== PRODUCTS start =========== -->
+    <section id="product">
+      <div class="container">
+        <div class="header">
+          <h2>New Arrivals Products</h2>
+        </div>
+        <div class="parent-product">
+          
+          <div class="child-product">
+            <div class="product-image">
+              <img src="./asstes/images/product image/product1.png" alt="">
+              <img src="./asstes/images/product image/product 2.png" alt="">
+              
+            </div>
+            <div class="product-contains">
+              <p>$150.65</p>
+              <h4>Lotion Shower gel</h4>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <h5>45%</h5>
+            </div>  
+            <div class="product-icon">
+              <ul>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href="#"><i class="fa-solid fa-crown"></i>
+                </a></li>
+                  
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href="#" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" href="#" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href="#" href="#"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+                </svg></a></li>
+              </ul>
+            </div> 
+          </div>
+
+          <div class="child-product">
+            <div class="product-image">
+              <img src="./asstes/images/product image/product3.png" alt="">
+              <img src="./asstes/images/product image/product4.png" alt="">
+             
+              
+            </div>
+            <div class="product-contains">
+              <p>$150.65</p>
+              <h4>Lotion Shower gel</h4>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <h5>Sale</h5>
+            </div>  
+            <div class="product-icon">
+              <ul>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href="#"><i class="fa-solid fa-crown"></i>
+                </a></li>
+                  
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href="#" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" href="#" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href="#" href="#"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+                </svg></a></li>
+              </ul>
+            </div> 
+          </div>
+
+          <div class="child-product">
+            <div class="product-image">
+              <img src="./asstes/images/product image/product 2.png" alt="">
+              <img src="./asstes/images/product image/product3.png" alt="">
+              
+            </div>
+            <div class="product-contains">
+              <p>$150.65</p>
+              <h4>Lotion Shower gel</h4>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+            </div>  
+            <div class="product-icon">
+              <ul>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href="#"><i class="fa-solid fa-crown"></i>
+                </a></li>
+                  
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href="#" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" href="#" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href="#" href="#"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+                </svg></a></li>
+              </ul>
+            </div> 
+          </div>
+
+          <div class="child-product">
+            <div class="product-image">
+              <img src="./asstes/images/product image/product4.png" alt="">
+              <img src="./asstes/images/product image/product 2.png" alt="">
+              
+            </div>
+            <div class="product-contains">
+              <p>$150.65</p>
+              <h4>Lotion Shower gel</h4>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <h5>New</h5>
+            </div>  
+            <div class="product-icon">
+              <ul>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href="#"><i class="fa-solid fa-crown"></i>
+                </a></li>
+                  
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href="#" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" href="#" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href="#" href="#"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+                </svg></a></li>
+              </ul>
+            </div> 
+          </div>
+
+          <div class="child-product">
+            <div class="product-image">
+              <img src="./asstes/images/product image/product3.png" alt="">
+              <img src="./asstes/images/product image/product4.png" alt="">
+             
+              
+            </div>
+            <div class="product-contains">
+              <p>$150.65</p>
+              <h4>Lotion Shower gel</h4>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <h5>Sale</h5>
+            </div>  
+            <div class="product-icon">
+              <ul>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href="#"><i class="fa-solid fa-crown"></i>
+                </a></li>
+                  
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href="#" href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" href="#" href="#"><i class="fa-solid fa-eye"></i></a></li>
+                <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href="#" href="#"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+                </svg></a></li>
+              </ul>
+            </div> 
+          </div>
+
+
+        
+        </div>
+      </div>
+      <!-- ======== SLICK SLIDER JQUERY END ======== -->
+    </section>
+      <!-- ============= PRODUCTS end ============= -->
+
+        <!-- ============== GET UP TO 35% SPA start =========== -->
+        <section id="spa">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 content">
+                <h2>Get Up To 35% Off all
+                  Best Spa Cosmetics
+                  Cream</h2>
+                 <p>Holisticly maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.</p> 
+                 <a href="#">Shop Now  <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+       <!-- ============= GET UP TO 35% SPA end ============= -->
+
+        <!-- ============== BEST SELLER PRODUCT start =========== -->
+      <section id="best-product">
+        <div class="container">
+          <div class="head">
+            <h2>Best Seller Product</h2>
+          </div>
+        <div class="row">
+          <div class="col-lg-3 test">
+
+          <div class="image-wrapper">
+            <img src="./asstes/images/best seller product/best product8.png" alt="Image 1" class="image main-image">
+            <img src="./asstes/images/best seller product/featured-2-8.webp" alt="Image 2" class="image hover-image">
+          </div>
+          <div class="image-info">
+            <p>$150.65 <span>$450.65</span></p>
+            <h3>Lotion Shower gel</h3>
+            <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-star"></i></span>
+          <h5>45%</h5>
+          </div>
+
+       
+
+      <div class="icons">
+      <ul>
+        <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+        <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+        <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+        <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+        </svg></a></li>
+      </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-lg-3 test">
+
+      <div class="image-wrapper">
+        <img src="./asstes/images/best seller product/best product2.png" alt="Image 1" class="image main-image">
+        <img src="./asstes/images/best seller product/featured-2-2.webp" alt="Image 2" class="image hover-image">
+      </div>
+      <div class="image-info">
+        <p>$150.65 <span>$450.65</span></p>
+        <h3>Lotion Shower gel</h3>
+        <span><i class="fa-solid fa-star"></i></span>
+      <span><i class="fa-solid fa-star"></i></span>
+      <span><i class="fa-solid fa-star"></i></span>
+      <span><i class="fa-solid fa-star"></i></span>
+      <span><i class="fa-solid fa-star"></i></span>
+      <h5>Sale</h5>
+      </div>
+
+   
+
+  <div class="icons">
+  <ul>
+    <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+    <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+    <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+    <li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+    </svg></a></li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+
+<div class="col-lg-3 test">
+
+  <div class="image-wrapper">
+    <img src="./asstes/images/best seller product/best product3.png" alt="Image 1" class="image main-image">
+    <img src="./asstes/images/best seller product/featured-2-3.webp" alt="Image 2" class="image hover-image">
+  </div>
+  <div class="image-info">
+    <p>$150.65 <span>$450.65</span></p>
+    <h3>Lotion Shower gel</h3>
+    <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  </div>
+
+
+
+<div class="icons">
+<ul>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+</svg></a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 test">
+
+  <div class="image-wrapper">
+    <img src="./asstes/images/best seller product/best product4.png" alt="Image 1" class="image main-image">
+    <img src="./asstes/images/best seller product/featured-2-4.webp" alt="Image 2" class="image hover-image">
+  </div>
+  <div class="image-info">
+    <p>$150.65 <span>$450.65</span></p>
+    <h3>Lotion Shower gel</h3>
+    <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <h5>New</h5>
+  </div>
+
+
+
+<div class="icons">
+<ul>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+</svg></a></li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-3 test">
+
+  <div class="image-wrapper">
+    <img src="./asstes/images/best seller product/best product3.png" alt="Image 1" class="image main-image">
+    <img src="./asstes/images/best seller product/featured-2-9h.webp" alt="Image 2" class="image hover-image">
+  </div>
+  <div class="image-info">
+    <p>$150.65 <span>$450.65</span></p>
+    <h3>Lotion Shower gel</h3>
+    <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <h5>Sale</h5>
+  </div>
+
+
+
+<div class="icons">
+<ul>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+</svg></a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 test">
+
+  <div class="image-wrapper">
+    <img src="./asstes/images/best seller product/best product3.png" alt="Image 1" class="image main-image">
+    <img src="./asstes/images/best seller product/featured-2-3.webp" alt="Image 2" class="image hover-image">
+  </div>
+  <div class="image-info">
+    <p>$150.65 <span>$450.65</span></p>
+    <h3>Lotion Shower gel</h3>
+    <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  </div>
+
+
+
+<div class="icons">
+<ul>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+</svg></a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 test">
+
+  <div class="image-wrapper">
+    <img src="./asstes/images/best seller product/best product4.png" alt="Image 1" class="image main-image">
+    <img src="./asstes/images/best seller product/featured-2-4.webp" alt="Image 2" class="image hover-image">
+  </div>
+  <div class="image-info">
+    <p>$150.65 <span>$450.65</span></p>
+    <h3>Lotion Shower gel</h3>
+    <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <h5>New</h5>
+  </div>
+
+
+
+<div class="icons">
+<ul>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+</svg></a></li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-3 test">
+
+  <div class="image-wrapper">
+    <img src="./asstes/images/best seller product/best product8.png" alt="Image 1" class="image main-image">
+    <img src="./asstes/images/best seller product/featured-2-8h.webp" alt="Image 2" class="image hover-image">
+  </div>
+  <div class="image-info">
+    <p>$150.65 <span>$450.65</span></p>
+    <h3>Lotion Shower gel</h3>
+    <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <span><i class="fa-solid fa-star"></i></span>
+  <h5>New</h5>
+  </div>
+
+
+
+<div class="icons">
+<ul>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" href=""><i class="fa-solid fa-crown"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to wishlist" href=""><i class="fa-solid fa-heart"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Qucik deal" href=""><i class="fa-solid fa-eye"></i></a></li>
+<li><a data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare" href=""><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9.6 0H12V13H9.6V0ZM0 8.125H2.4V13H0V8.125ZM4.8 4.0625H7.2V13H4.8V4.0625Z" fill="#151A32" />
+</svg></a></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="container-footer">
+  <h3>See All Products <i class="fa-solid fa-arrow-right-long"></i></h3>
+</div>
+
+        </div>
+      </section>
+       <!-- ============= BEST SELLET PRODUCT end ============= -->
+
+  <!-- ============== DEALS OF THE DAY start =========== -->
+
+<section id="dealdays">
+  <div class="container">
+    <div class="title">
+      <h2>Deals of The Day</h2>
+    </div>
+
+<div class="dealbox">
+  <div class="timer">
+    <ul>
+      <li>
+        <h4 class="days">27</h4>
+        <p>Days</p>
+      </li>
+      <li>
+        <h4 class="hour">16</h4>
+        <p>Hours</p>
+      </li>
+      <li>
+        <h4 class="min">13</h4>
+        <p>Minutes</p>
+      </li>
+      <li>
+        <h4 class="sec">30</h4>
+        <p>Sec</p>
+      </li>
+    </ul>
+  </div>
+</div> 
+
+<div class="wrapper">
+
+<div class="dealbox-slick">
+    <div class="child" style="background-image: url(./asstes/images/timer-img/timer2.png);">
+      
+      <div class="content">
+    <h4>Fairness Cream</h4>
+    <h2>Get Up To 35% Off</h2>
+    <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+    <span>$256.35</span>
+    <span>$356.35</span>
+    <br>
+    <a href="#">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+  </div> 
+  
+
+      </div>     
+</div>
+
+
+<div class="dealbox-slick">
+  <div class="child" style="background-image: url(./asstes/images/timer-img/timer1.png);">
+    
+    <div class="content">
+  <h4>Fairness Cream</h4>
+  <h2>Get Up To 35% Off</h2>
+  <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+  <span>$256.35</span>
+  <span>$356.35</span>
+  <br>
+  <a href="#">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+</div> 
+
+
+    </div>     
+</div>
+
+<div class="dealbox-slick">
+  <div class="child" style="background-image: url(./asstes/images/timer-img/timer3.png);">
+    
+    <div class="content">
+  <h4>Fairness Cream</h4>
+  <h2>Get Up To 35% Off</h2>
+  <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+  <span>$256.35</span>
+  <span>$356.35</span>
+  <br>
+  <a href="#">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+</div> 
+
+
+    </div>     
+</div>
+
+
+
+<div class="dealbox-slick">
+  <div class="child" style="background-image: url(./asstes/images/timer-img/timer4.png);">
+    
+    <div class="content">
+  <h4>Fairness Cream</h4>
+  <h2>Get Up To 35% Off</h2>
+  <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+  <span>$256.35</span>
+  <span>$356.35</span>
+  <br>
+  <a href="#">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+</div> 
+
+
+    </div>     
+</div>
+
+
+<div class="dealbox-slick">
+  <div class="child" style="background-image: url(./asstes/images/timer-img/timer1.png);">
+    
+    <div class="content">
+  <h4>Fairness Cream</h4>
+  <h2>Get Up To 35% Off</h2>
+  <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+  <span>$256.35</span>
+  <span>$356.35</span>
+  <br>
+  <a href="#">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+</div> 
+
+
+    </div>     
+</div>v
+
+<div class="dealbox-slick">
+  <div class="child" style="background-image: url(./asstes/images/timer-img/timer4.png);">
+    
+    <div class="content">
+  <h4>Fairness Cream</h4>
+  <h2>Get Up To 35% Off</h2>
+  <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+  <span>$256.35</span>
+  <span>$356.35</span>
+  <br>
+  <a href="#">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+</div> 
+
+
+    </div>     
+</div>
+
+</div>
+
+   
+  </div>
+</section>
+
+ <!-- ============= DEALD OF THE DAY end ============= -->      
+
+ <!-- ============== REAL SHINE start =========== -->
+<section id="shine">
+  <div class="container">
+    <div class="content">
+      <h3>SPECIAL OFFER</h3>
+      <h2>Beauty Inspired by Real
+        Shine In Life </h2>
+      <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
+      <a href="#">Explore More <i class="fa-solid fa-arrow-right-long"></i></a>
+      
+    </div> 
+  <div class="image">
+    <img src="./asstes/images/real shine.png" width="712px" height="500px" alt="">
+  </div>
+<span><i class="fa-solid fa-play"></i></span>
+
+    </div>
+   
+
+  </div>
+</section>
+
+<!-- ============= REAL SHINE end ============= -->
+
+ <!-- ============== LATEST NEWS start =========== -->
+  <section id="latest-news">
+    <div class="container">
+      <div class="header">
+        <h2>Latest News</h2>
+      </div>
+    </div>
+  </section>
+<!-- ============= LATEST NEWS end ============= -->
+
+<!-- Jquery -->
+ <script src="./asstes/js/jquery-3.7.1.min.js"></script>
+
+ <!-- Slick slider -->
+  <script src="./asstes/js/slick.min.js"></script>
+  <!-- bootstrap -->
+   <script src="./asstes/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+     <script src="./asstes/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+ 
