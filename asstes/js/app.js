@@ -161,14 +161,30 @@ $('.parent-product').slick({
 //dealbox slick-slider jQuery
 $(document).ready(function(){
   $('.wrapper').slick({
-    dots: true,                // Show dots for navigation
+    dots: true,               
     infinite: true,
     arrows:false,
-    dotsClass:"container dot-active",            // Infinite loop sliding
-    speed: 500,                // Animation speed
-    autoplay: true,            // Enable autoplay
-    autoplaySpeed: 2000,       // Autoplay speed (2 seconds)
-    slidesToShow: 2,           // Number of slides to show at once
-    slidesToScroll: 2          // Number of slides to scroll at once
+    dotsClass:"container dot-active",            
+    speed: 500,                
+    autoplay: true,            
+    autoplaySpeed: 2000,       
+    slidesToShow: 2,         
+    slidesToScroll: 2          
   });
 });
+
+//latest news
+$(function(){
+  $('.latest-parent').slick({
+    dots: true,               
+    infinite: true,
+    arrows:false,
+    dotsClass:"container dot-active",            
+    speed: 500,                
+    autoplay: true,            
+    autoplaySpeed: 2000,       
+    slidesToShow: 4,         
+    slidesToScroll: 4          
+  });
+          
+})

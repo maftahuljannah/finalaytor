@@ -1079,6 +1079,7 @@ opacity: 1;
 /* ================ REAL SHINE start ============= */
 #shine{
     margin-bottom: 90px;
+    background-color:  #F1F3F4;
 }
 #shine .container{
     background-color: #F1F3F4;
@@ -1252,7 +1253,111 @@ z-index: 55;
 }
 /* ================ REAL SHINE end ============== */
 
+/* ================ LATEST NEWS start ============= */
 
+#latest-news .container .header h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color); 
+    padding: 20px 0;   
+}
+#latest-news .container .latest-parent{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#latest-news .container .latest-parent .latest-child{
+    background-color: white; 
+    padding: 15px 0 15px 25px ;
+    gap: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    flex-grow: 1;
+   
+}
+  
+.latest-child .container .latest-parent .latest-child img{
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+#latest-news .latest-parent .latest-child h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color); 
+    margin-top: 10px;   
+}
+#latest-news .latest-parent .latest-child h4{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--1st-primary-color); 
+    margin-top: 10px;   
+}
+#latest-news .latest-parent .latest-child p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    width: 272px;    
+}
+#latest-news .latest-parent .latest-child a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);  
+    margin: 0 40px 0 0;  
+}
+
+#latest-news .latest-parent .latest-content span{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);    
+}
+#latest-news{
+    position: relative;
+    padding-bottom: 40px; 
+    min-height: 500px;
+}
+#latest-news .dot-active{
+    display: flex;
+    position: absolute;
+    left: 92%;
+    bottom: -58px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#latest-news .dot-active button{
+    background-color: var(--background-color);
+    border: none;
+    color: transparent;
+    margin: 0 2.5px;
+    width: 10px;
+    height: 8px;
+    border-radius: 5px;
+}
+#latest-news .slick-active button{
+    width: 40px;
+    background-color: var(--2nd-primary-color);
+}
+
+/* ================ LATEST NEWS end ============== */
 
 
 
