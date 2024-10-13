@@ -1438,7 +1438,7 @@ z-index: 55;
 }
 @media (max-width: 480px){
     #latest-news{
-        margin: 0 0px 0 40px;
+        margin: 0 0px 0 30px;
         position: relative;
         margin-bottom: 50px;
     }  
