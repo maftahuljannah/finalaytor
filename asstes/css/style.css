@@ -1254,6 +1254,11 @@ z-index: 55;
 /* ================ REAL SHINE end ============== */
 
 /* ================ LATEST NEWS start ============= */
+#latest-news{
+    overflow: hidden;
+    margin: 0 165px 0 0;
+}
+
 
 #latest-news .container .header h2{
     font-family: var(--font-family);
@@ -1262,25 +1267,27 @@ z-index: 55;
     line-height: 128%;
     text-align: center;
     color: var(--text-color); 
-    padding: 20px 0;   
+    padding: 25px 0 25px 0px; 
+    margin-left: 50px;  
 }
 #latest-news .container .latest-parent{
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    width: calc(115% - 10px);
+    margin:0 5px;
 }
 #latest-news .container .latest-parent .latest-child{
     background-color: white; 
-    padding: 15px 0 15px 25px ;
+    padding: 15px 0 15px 38px ;
     gap: 10px;
     border: 1px solid #ddd; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 350px;
     flex-grow: 1;
-   
+ 
 }
   
 .latest-child .container .latest-parent .latest-child img{
@@ -1357,6 +1364,76 @@ z-index: 55;
     background-color: var(--2nd-primary-color);
 }
 
+/* mobile device */
+@media  (max-width: 780px) {
+    #latest-news {
+        overflow: hidden;
+        margin: 0 0px; /* Narrow margins for mobile */
+        padding-bottom: 40px;
+        max-height: auto; /* Adjust height for mobile */
+    }
+    
+    #latest-news .container .header h2 {
+        font-size: 21px; /* Smaller font size for mobile */
+        padding: 15px 0;
+        margin-left: 0; /* Center-align text */
+    }
+    
+    #latest-news .container .latest-parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%; /* Full width on mobile */
+        margin: 0;
+    }
+    
+    #latest-news .container .latest-parent .latest-child {
+        background-color: white;
+        padding: 10px;
+        margin: 10px 0; 
+        width: 100%; 
+        max-width: 300px; 
+}#latest-news .container .latest-parent .latest-child img{
+    width: 90px;
+    height: 80px;
+    object-fit: cover;
+}
+#latest-news .container .latest-parent .latest-child .latest-content h3{
+    font-size: 9px;
+}
+#latest-news .container .latest-parent .latest-child .latest-content h4{
+    font-size: 9px;
+}
+#latest-news .container .latest-parent .latest-child .latest-content p{
+    font-size: 6px;
+    width: 90%;
+}
+#latest-news .container .latest-parent .latest-child .latest-content a{
+    font-size: 4px;
+}
+#latest-news .container .latest-parent .latest-child .latest-content span{
+    font-size: 4px;
+}
+#latest-news{
+    position: relative;
+    margin-bottom: 10px;
+}
+#latest-news .dot-active button{
+    margin: 0 2.5px;
+    width: 10px;
+    height: 8px;
+    border-radius: 4px;
+}
+#latest-news .dot-active{
+    z-index: 10;
+    position: absolute;
+
+}
+#latest-news .slick-active button{
+    width: 40px;
+    background-color: var(--2nd-primary-color);
+}
+}
 /* ================ LATEST NEWS end ============== */
 
 
