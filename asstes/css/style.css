@@ -1256,7 +1256,7 @@ z-index: 55;
 /* ================ LATEST NEWS start ============= */
 #latest-news{
     overflow: hidden;
-    margin: 0 165px 0 0;
+    margin: 0 160px 0 0;
 }
 
 
@@ -1383,8 +1383,8 @@ z-index: 55;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%; /* Full width on mobile */
-        margin: 0;
+        width: calc(125% - 16px); 
+        margin: 0 8px;/* Full width on mobile */
     }
     
     #latest-news .container .latest-parent .latest-child {
@@ -1394,29 +1394,30 @@ z-index: 55;
         width: 100%; 
         max-width: 300px; 
 }#latest-news .container .latest-parent .latest-child img{
-    width: 90px;
-    height: 80px;
+    width: 272px;
+    height: 200px;
     object-fit: cover;
 }
 #latest-news .container .latest-parent .latest-child .latest-content h3{
-    font-size: 9px;
+    font-size: 15px;
 }
 #latest-news .container .latest-parent .latest-child .latest-content h4{
-    font-size: 9px;
+    font-size: 15px;
 }
 #latest-news .container .latest-parent .latest-child .latest-content p{
-    font-size: 6px;
+    font-size: 12px;
     width: 90%;
 }
 #latest-news .container .latest-parent .latest-child .latest-content a{
-    font-size: 4px;
+    font-size: 8px;
 }
 #latest-news .container .latest-parent .latest-child .latest-content span{
-    font-size: 4px;
+    font-size: 8px;
 }
 #latest-news{
+    margin: 0 55px 0 0px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 #latest-news .dot-active button{
     margin: 0 2.5px;
@@ -1427,12 +1428,25 @@ z-index: 55;
 #latest-news .dot-active{
     z-index: 10;
     position: absolute;
+    left: 79%;
 
 }
 #latest-news .slick-active button{
     width: 40px;
     background-color: var(--2nd-primary-color);
 }
+}
+@media (max-width: 480px){
+    #latest-news{
+        margin: 0 0px 0 40px;
+        position: relative;
+        margin-bottom: 50px;
+    }  
+    #latest-news .dot-active{
+        position: absolute;
+        left: 60%;
+    
+    } 
 }
 /* ================ LATEST NEWS end ============== */
 
