@@ -1453,7 +1453,6 @@ z-index: 55;
 /* ============ FOOTER START ================== */
 #footer{
     width: 100%;
-    margin-bottom: 90px;
     margin-top: 150px;
     background-color: #11161E;
 }
@@ -1590,6 +1589,22 @@ text-align: center;
     padding: 10px 4px;
   background-color: #ff6f61;
   color: #ddd; 
+}
+#copyright{
+    margin-bottom: 90px;
+    background-color: #312d2d;
+}
+#copyright .container h2{
+    padding: 20px 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--comon-colot);  
+}
+#copyright .container h2 span{
+    color: #ff6f61;
 }
 /* ================ FOOTER end ============== */
 
