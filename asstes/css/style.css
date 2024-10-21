@@ -239,6 +239,9 @@ font-size: 25px;
 /* ================ NAV end ============== */
 
 /* ================ BANNER1 start ============= */
+#banner{
+    margin-top: 58px;
+}
 #banner .slider{
     background-repeat: no-repeat;
     background-size: cover;
@@ -1590,6 +1593,14 @@ text-align: center;
   background-color: #ff6f61;
   color: #ddd; 
 }
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    #footer .delivery ul li {
+        border-right: none; /* Remove border for smaller screens */
+    }
+    
+}
+
 /* copyright start */
 #copyright{
     margin-bottom: 90px;
