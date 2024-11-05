@@ -44,19 +44,14 @@ function myFunction() {
 
 //scroll indicator end
 
-//sticy nav
-let lastScrollY = window.scrollY;
-const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > lastScrollY) {
-    // Scrolling down
-    navbar.style.top = '-100px'; // Hide the navbar
+document.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 100) {
+      navbar.classList.add("navbar-hidden");
   } else {
-    // Scrolling up
-    navbar.style.top = '0'; // Show the navbar
+      navbar.classList.remove("navbar-hidden");
   }
-  lastScrollY = window.scrollY;
 });
 
 //nav end

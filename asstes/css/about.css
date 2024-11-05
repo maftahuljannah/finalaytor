@@ -31,11 +31,10 @@ a{
 /* ================ NAV start ============= */
 .navbar {
     position: fixed;
-    margin-top: 75px;
+    margin-top: -95px;
     width: 100%;
     z-index: 100;
     transition: top 0.5s; 
-    overflow-x: auto; /* Enable horizontal scrolling if necessary */
    
 }
 
@@ -49,7 +48,7 @@ nav ul li a{
     font-size: 16px;
     line-height: 162%;
     color: var(--text-color);
-    padding: 0 21px;
+    padding: 10px 21px 0 21px;
 }
 nav ul li a:hover{
     color: #ff5645;
@@ -220,6 +219,7 @@ max-width: 400px;
     background: transparent;
     border: 3px solid var(--2nd-primary-color);
     position: absolute;
+    z-index: 200;
     right: 30px;
     top: 30px;
     border-radius: 50%;
@@ -291,76 +291,51 @@ font-size: 25px;
 }
 
 /* ================ NAVBARFOOTER end ============== */
-@media (max-width: 1020px){
-    .navbar{
-        position: fixed;
-        width: 100%;
-        margin-top: 0;
-        z-index: 600;
-    }
-    nav .scroll-indicator {
-        display: none;
-    }  
-   
-}
+
+/* Responsive Navbar */
 @media (max-width: 768px) {
-    /* Adjust the navbar for smaller screens */
-    .navbar {
-        position: fixed;
-        width: 100%;
-        margin-top: 0;
-        z-index: 600;
-    }
-
-    /* Style the list items in the navbar */
-    nav .scroll-indicator .list {
-        flex-direction: column; 
-        margin-right: 0;
-        padding: 0;
-    }
-
-    nav .scroll-indicator .list li {
-        margin-right: 0;
-        margin-bottom: 10px; 
-    }
-
-    /* Adjust the font sizes and spacing */
-    nav ul li a,
-    nav .scroll-indicator h4,
-    nav .scroll-indicator .list li a {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-
-    /* Hide the scroll indicator on small devices */
-    nav .scroll-indicator {
-        display: none;
-    }
-
-    /* Handle search-body and footer responsiveness */
-    .search-body form input,
-    .search-body form button {
-        font-size: 14px;
-        z-index: 300;
-    }
-
-    /* Make the icons larger on small screens */
-    nav .icons li a {
-        padding: 0 15px;
-    }
-   
+  nav .scroll-indicator h4 {
+    display: none;
+  }
+  nav .scroll-indicator{
+    font-size: 8px;
+    padding: 15px 0 0 0;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .offcanvas-body {
+    display: block;
+    /* Adjust padding for mobile-friendly spacing */
+    padding: 20px;
+  }
 }
-@media (max-width: 500px){
-    .search-body{
-        z-index: 200;
+/* Other responsive adjustments */
+@media (max-width: 480px) {
+    nav .scroll-indicator h4 {
+      display: none;
     }
-}
+    nav .scroll-indicator .list li a{
+        font-size: 8px;
+        padding: 0 0 0 0;
+    }
+    nav .scroll-indicator .list{
+        font-size: 7px;
+        margin-left: 10px;
+    }
+    nav .search-footer span{
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+
 /* ================ NAV end ============== */
 
 /* ================ ABOUT BANNER start ============= */
 #banner{
-    margin-top: 172px;
-    margin-bottom: 90px;
+    margin-top: 172px
 }
 #banner .child{
     background-repeat: no-repeat;
@@ -391,47 +366,121 @@ font-size: 25px;
     text-align: center;
     color: var(--text-color);    
 }
+/* Responsive adjustments for medium screens (tablets, small desktops) */
 @media (max-width: 768px) {
-    #banner {
-        margin-top: 0px;
-        overflow-x: hidden;
-    }
+   
 
     #banner .child {
-        height: 400px; /* Reduce banner height for mobile */
-        background-size: contain; /* Adjust background size */
-    }
-
-    #banner .child .container {
-        padding: 0 20px; /* Add padding to the container for better text spacing */
+        height: 500px;
     }
 
     #banner .child .container h2 {
-        font-size: 28px; /* Reduce heading size for mobile */
-        line-height: 130%;
+        font-size: 36px;
     }
 
     #banner .child .container h4 {
-        font-size: 14px; /* Adjust subheading size */
-        line-height: 160%;
+        font-size: 14px;
     }
 }
-@media (max-width: 500px) {
-    #banner{
-        overflow-x: hidden;
-        margin-top: 20px;
-    }
+
+/* Responsive adjustments for small screens (mobile devices) */
+@media (max-width: 480px) {
+    
     #banner .child {
-        height: 300px; 
-        margin-bottom: 0;
+        height: 350px;
     }
 
     #banner .child .container h2 {
-        font-size: 24px; /* Reduce heading size even more */
+        font-size: 24px;
+        line-height: 1.2;
     }
 
     #banner .child .container h4 {
-        font-size: 12px; /* Smaller text for small devices */
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 0 10px; /* Add padding for better text alignment on mobile */
     }
 }
 /* ================ ABOUT BANNER end ============== */
+
+/* ================ Learn about aytor shop start ============= */
+#learn{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+#learn .container .row{
+    background-color: #F1F3F4;
+    border-radius: 0px 0 0 500px;
+}
+
+#learn .container .row .content h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);    
+}
+#learn .container .row .content p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color); 
+    width: 92%;   
+}
+#learn .container .row .content_2 p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color); 
+    padding-left: 25px;   
+}
+#learn .container .row .content_2 a{
+    display: block;
+    width: 180px;
+    height: 56px;
+    border-radius: 3px;
+    padding: 13px 0 0 0;
+    background-color: #ff5645;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);    
+}
+#learn .container .row .content_2 .button{
+    padding: 30px 0 0 0;
+}
+#learn .container .row .update{
+    background-color: #f1f1f1;
+}
+#update .container{
+    padding: 0 0 0 100px;
+}
+#update .container .row a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FF6F61;
+    opacity: 0.3;
+    align-content: center;
+}
+#update .container .row h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--1st-primary-color);
+    padding: 0 0 0 7px;    
+}
+#update .container .row p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);    
+}
+/* ================ Learn about aytor shop end ============== */
