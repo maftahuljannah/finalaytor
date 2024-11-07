@@ -293,8 +293,13 @@ font-size: 25px;
 /* ================ NAVBARFOOTER end ============== */
 
 /* Responsive Navbar */
+@media (max-width: 1020px) {
+    nav .scroll-indicator h4{
+      display: none;
+    }
+}
 @media (max-width: 768px) {
-  nav .scroll-indicator h4 {
+  nav .scroll-indicator h4{
     display: none;
   }
   nav .scroll-indicator{
@@ -312,7 +317,7 @@ font-size: 25px;
 }
 /* Other responsive adjustments */
 @media (max-width: 480px) {
-    nav .scroll-indicator h4 {
+    nav .scroll-indicator h4{
       display: none;
     }
     nav .scroll-indicator .list li a{
@@ -371,6 +376,7 @@ font-size: 25px;
    
 
     #banner .child {
+        width: 100%;
         height: 500px;
     }
 
@@ -387,6 +393,7 @@ font-size: 25px;
 @media (max-width: 480px) {
     
     #banner .child {
+        width: 100%;
         height: 350px;
     }
 
@@ -456,9 +463,105 @@ font-size: 25px;
 #learn .container .row .update{
     background-color: #f1f1f1;
 }
-#update .container{
-    padding: 0 0 0 100px;
+#learn .container .row .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
 }
+#learn .icon {
+    flex: 1 1 22%; /* Adjusts to take up 22% of the container width */
+    min-width: 120px; /* Minimum width for each item */
+    box-sizing: border-box;
+    text-align: center;
+  }
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+    #learn {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #learn .content h3 {
+        font-size: 32px;
+    }
+    #learn .content p,
+    #learn .content_2 p {
+        font-size: 15px;
+    }
+    #learn .content_2 .button a {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    #learn .container{
+        overflow: hidden;
+    }
+    #learn .container .image{
+        width: 360px;
+        height: auto;
+    }
+    #learn {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #learn .content h3 {
+        font-size: 28px;
+    }
+    #learn .content p,
+    #learn .content_2 p {
+        font-size: 14px;
+    }
+    #learn .content_2 .button a {
+        width: 140px;
+        height: 44px;
+        font-size: 14px;
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+    #learn .col-lg-3.icon {
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+/* Extra-small devices */
+@media (max-width: 480px) {
+    #learn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #learn .content h3 {
+        font-size: 24px;
+    }
+    #learn .content p,
+    #learn .content_2 p {
+        font-size: 12px;
+    }
+    #learn .content_2 .button a {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+
+#update .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #update .col-lg-3 {
+    flex: 1 1 22%; /* Adjusts to take up 22% of the container width */
+    min-width: 120px; /* Minimum width for each item */
+    box-sizing: border-box;
+    text-align: center;
+  }
 #update .container .row a{
     display: inline-block;
     width: 100px;
@@ -483,4 +586,163 @@ font-size: 25px;
     line-height: 175%;
     color: var(--paragraph-color);    
 }
+
+@media (max-width: 576px) {
+    #update .col-lg-3 {
+      flex: 1 1 48%; /* Makes it two items per row on small screens */
+    }
+  }
+
 /* ================ Learn about aytor shop end ============== */
+
+/* ================ OUR STORY start ============= */
+
+#story{
+    margin-top: 90px;
+    background-color:  #F1F3F4;
+}
+#story{
+    background-color: #F1F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#story .container .content h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+    padding-left: 20px;
+}
+#story .container .content p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: justify;
+    color: var(--paragraph-color);  
+    width: 80%;
+    padding-left: 20px;
+}
+#story .container .content p:last-child{
+    margin-top: 20px;
+}
+#story .image{
+    width: 90%;
+}
+#story span{
+position: absolute;  
+top: 50%;
+left: 75%; 
+color: var(--1st-primary-color);
+width: 40px;
+height: 40px;
+background-color: #fff;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+z-index: 55;
+}
+#story  span::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    left: 0;
+    animation: first 2s linear infinite;
+    background-color: #dfe6e9;
+    transition-delay: 2s;
+    z-index: 54;
+}
+#story span::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    animation: second 2s linear infinite;
+    background-color: #dfe6e9;
+    transition-delay: 4s;
+    z-index: 53;
+}
+@keyframes first{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.8);
+    }
+}
+@keyframes second{
+    0%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.8);
+    }
+}
+
+.image {
+    overflow: hidden; 
+  }
+  
+  .image img {
+    transition: transform 0.3s ease; 
+  }
+  
+  .image img:hover {
+    transform: scale(1.1);
+  }
+
+
+/* Responsive styles for small devices */
+@media (max-width: 768px) {
+    #story {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #story .container {
+        flex-direction: column;
+    }
+
+    #story .container .content {
+        order: 1; /* Text content appears first */
+    }
+
+    #story .image {
+        width: 100%;
+        order: 2; /* Image appears below the text */
+    }
+
+    #story .container .content h2 {
+        font-size: 24px; /* Adjusted for better fit on small screens */
+        padding-left: 0;
+    }
+
+    #story .container .content p {
+        font-size: 14px; /* Adjusted for smaller screens */
+        padding-left: 0;
+        width: 100%;
+    }
+
+    #story span {
+        top: 70%;
+        left: 53%;
+        transform: translateX(-50%);
+    }
+}   
+
+/* ================ OUR STORY end ============== */
