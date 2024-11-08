@@ -99,6 +99,8 @@ $('.parent-product').slick({
 
  });
 
+ //product jquery end
+
  let lastScrollY = window.scrollY;
  const navbar = document.querySelector('.navbar');
  
@@ -223,3 +225,4 @@ $(function(){
   });
           
 });
+

@@ -745,4 +745,233 @@ z-index: 55;
     }
 }   
 
+#delivery{
+    margin-top: 90px;
+ }
+#delivery .container .row .col-lg-3 a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ff5645;
+    margin: 0 10px 0px 0;
+}
+#delivery .container .row .col-lg-3 h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 15%;
+    color: var(--text-color);    
+}
+#delivery .container .row .col-lg-3 p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: var(--paragraph-color);    
+}
+#delivery .container .row .col-lg-3 span{
+    color: #ff5645;
+}
+#delivery .container .row .col-lg-3 {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    gap: 10px; /* Adds space between the h3 and p */
+    border-right: 3px solid #f1f1f1
+}
+#delivery .container .row .info{
+   margin: 32px 0 0 0;
+}
+#delivery .container .row .col-lg-3:last-child{
+    border: none;
+}
+#delivery .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #delivery .col-lg-3 {
+    flex: 1 1 100%; /* Full width on extra small devices */
+    max-width: 100%;
+  }
+  
+  @media (min-width: 576px) { /* Small devices */
+    #delivery .col-lg-3 {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+    #delivery .container .row .col-lg-3:last-child{
+        border-right: 3px solid #f1f1f1;
+    }
+  }
+  
+  @media (min-width: 992px) { /* Large devices */
+    #delivery .col-lg-3 {
+      flex: 1 1 25%;
+      max-width: 25%;
+    }
+    #delivery .container .row .col-lg-3:last-child{
+        border-right: none;
+    }
+  }
+  
 /* ================ OUR STORY end ============== */
+
+/* ================ FOUNDER start ============= */
+#leader{
+    margin-top: 90px;
+}
+
+ #leader .child-leader {
+   padding: 0 10px;
+}
+  
+
+#leader .child-leader .leader-content{
+    user-select: text;  
+    text-align: center;
+    background-color: #dfe6e9;
+ }
+#leader .container .header h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+}
+#leader .container .leader-content h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--text-color);  
+    padding-top: 15px;  
+}
+#leader .container .leader-content p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--1st-primary-color);    
+}
+#leader .container .leader-content span{
+    color: #000;
+    padding: 0px 4px;
+}
+#leader .left-arrow{
+    background: var(--3d-primary-color);
+    opacity: 0.7;
+    position: absolute;
+    left: 0.9%;
+    top: 40%;
+    transform: translateY(-60%);
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    z-index: 55;
+    color: var(--comon-colot);
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+#leader .right-arrow{
+    background: var(--3d-primary-color);
+    opacity: 0.7;
+    position: absolute;
+    right: 0.9%;
+    top: 40%;
+    transform: translateY(-60%);
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    z-index: 55;
+    color: var(--comon-colot);
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+#leader .child-leader .leader-image img{
+    display: block;
+    width: 100%;
+}
+/* ================ FOUNDER end ============== */
+
+/* ================ INSTAGRAM start ============= */
+#insta{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+#insta .container .header h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 0;
+}
+#insta .container .insta-child{
+    position: relative;
+}
+#insta .container .contains span{
+    color: #ff5645;
+    font-size: 40px;
+}
+#insta .container .contains{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(17,22,30,0.4);
+    padding:70px 83px;
+    transform: scale(0);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#insta .insta-image:hover .contains{
+    transform: scale(1);
+}
+#insta{
+    position: relative;
+    padding-bottom: 40px; 
+    min-height: 500px;
+}
+#insta .dot-active{
+    display: flex;
+    position: absolute;
+    left: 92%;
+    bottom: -58px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+#insta .dot-active button{
+    background-color: var(--background-color);
+    border: none;
+    color: transparent;
+    margin: 0 2.5px;
+    width: 10px;
+    height: 8px;
+    border-radius: 5px;
+}
+#insta .slick-active button{
+    width: 40px;
+    background-color: var(--2nd-primary-color);
+}
+@media (max-width: 480px) {
+    #insta .dot-active {
+        left: 50%;
+        bottom: -58px;
+        transform: translateX(-50%);
+        padding-right: 0; /* Remove any padding to prevent shift */
+        justify-content: center; /* Center dots if they’re within a flex container */
+    }
+}
+
+/* ================ INSTAGRAM end ============== */
