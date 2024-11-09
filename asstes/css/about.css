@@ -694,15 +694,16 @@ z-index: 55;
     }
 }
 
-.image {
+#story .image {
     overflow: hidden; 
+    cursor: pointer;
   }
   
-  .image img {
+#story  .image img {
     transition: transform 0.3s ease; 
   }
   
-  .image img:hover {
+#story  .image img:hover {
     transform: scale(1.1);
   }
 
@@ -905,7 +906,6 @@ z-index: 55;
 /* ================ INSTAGRAM start ============= */
 #insta{
     margin-top: 90px;
-    margin-bottom: 90px;
     overflow: hidden;
 }
 #insta .container .header h2{
@@ -975,3 +975,130 @@ z-index: 55;
 }
 
 /* ================ INSTAGRAM end ============== */
+
+/* ================FOOTER start ============= */
+#footer{
+    margin-top: 0px;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+#footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .container .row .head{
+margin-top: 40px;
+}
+
+#footer .col-lg-6, 
+#footer .col-lg-6 {
+  text-align: center;
+}
+#footer .container .row .head h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+}
+#footer .container .row .head p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    width: 75%;    
+}
+#footer .container .row .email input{
+    padding: 15px 65px;
+    background-color: var(--comon-colot);
+    border: none;
+}
+#footer .container .row .email button{
+    padding: 15px 45px;
+    background-color: #ff5645;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#footer .container .row .email button:hover{
+    background-color: #151a32;
+}
+#footer .footer-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px; 
+}
+#footer .footer-content .col-lg-3,
+#footer .footer-content .col-lg-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adds space for smaller screens */
+}
+#footer .footer-content h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 142%;
+    color: var(--text-color); 
+    padding-bottom: 20px;  
+}
+#footer .footer-content p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--paragraph-color);    
+} 
+#footer .footer-content .aytor{
+    padding-left: 40px;
+}
+#footer .footer-content .aytor img{
+    padding-bottom: 20px;
+}
+#footer .footer-content .aytor p{
+width: 80%;
+}
+#footer .footer-content .aytor span{
+    cursor: pointer;
+    padding: 3px 8px;
+}
+#footer .footer-content .aytor span:hover{
+  color: #ff5645;  
+}
+#footer .footer-content .aytor a{
+    color: #ff5645;
+}
+#footer .footer-content .aytor a:hover{
+    color: #000;
+}
+#footer .footer-content .contact{
+    padding-left: 20px;
+}
+#footer .footer-content .contact span{
+    padding-right: 6px;
+    color: #ff5645;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #footer .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #footer .footer-content .col-lg-3,
+    #footer .footer-content .col-lg-2 {
+      width: 100%;
+      text-align: justify;
+    }
+  }
+/* ================FOOTER end ============== */
