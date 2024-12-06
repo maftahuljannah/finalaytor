@@ -55,6 +55,7 @@ document.addEventListener("scroll", function () {
 });
 
 //nav end
+
 // Function to update the large image
 function showImage(imgElement) {
   const mainImage = document.getElementById('mainImage');
@@ -95,3 +96,13 @@ $(document).ready(function () {
   });
 });
 
+//jacket quantity section
+function updateQuantity(change) {
+  const quantityInput = document.getElementById("quantity");
+  let currentQuantity = parseInt(quantityInput.value);
+
+  // Update quantity with boundary checks
+  currentQuantity += change;
+  if (currentQuantity < 1) currentQuantity = 1; // Minimum value is 1
+  quantityInput.value = currentQuantity;
+}

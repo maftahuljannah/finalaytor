@@ -274,31 +274,97 @@
     <div class="container">
       <div class="row">
         <!-- Slider and large image display -->
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-md-4 col-sm-12">
           <!-- Large Image Display -->
           <div class="large-image">
-            <img id="mainImage" src="./asstes/shop-detsils-image/shop-d1.jpg" alt="Large View">
+            <img id="mainImage" src="./asstes/shop-detsils-image/jacket13.png" alt="Large View">
           </div>
           <!-- Thumbnail Slider -->
           <div class="slider">
-            <img src="./asstes/shop-detsils-image/shop-d1.jpg" alt="Thumbnail 1" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/shop-d2.png" alt="Thumbnail 2" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/unsplash-3.jpg" alt="Thumbnail 3" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/unsplash-4.jpg" alt="Thumbnail 4" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/unsplas6.jpg" alt="Thumbnail 5" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/shop-8.jpg" alt="Thumbnail 6" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/unsplash-3.jpg" alt="Thumbnail 7" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/unspla5.jpg" alt="Thumbnail 8" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/shop-d9.jpg" alt="Thumbnail 9" onclick="showImage(this)">
-            <img src="./asstes/shop-detsils-image/shop-d2.png" alt="Thumbnail 7" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket13.png" alt="Thumbnail 1" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket2.jpg" alt="Thumbnail 2" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket3.jpg" alt="Thumbnail 3" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket4.jpg" alt="Thumbnail 4" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket5.jpg" alt="Thumbnail 5" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket6.jpg" alt="Thumbnail 6" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket7.jpg" alt="Thumbnail 7" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket9.jpg" alt="Thumbnail 8" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket10.jpg" alt="Thumbnail 9" onclick="showImage(this)">
+            <img src="./asstes/shop-detsils-image/jacket11.jpg" alt="Thumbnail 7" onclick="showImage(this)">
           </div>
         </div>
         <!-- Content -->
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-md-5 co-sm-4">
+         <div class="content">
+        <h2>Leather Jackets</h2>
+        <h5>5.00
+          <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> 
+            <i class="fa-solid fa-star"></i>  <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          (5 Customer Review)
+        </h5>
+        <h4>$125.65 <span>$125.65</span></h4>
+         <p>Quickly productivate holistic systems after 24/365 e-commerce. Continually synthesize superior catalysts for change via high standards in leadership skills. Collaboratively evisculate distributed functionalities rather than timely methods of empowerment.</p>  
+        
+          <!-- Size Selection -->
+          <div class="product-option">
+            <label for="size">Size:</label>
+            <select id="size" class="custom-select">
+              <option value="small">44</option>
+              <option value="medium">46</option>
+              <option value="large">48</option>
+              <option value="xl">50</option>
+            </select>
+          </div>
+          <!-- Color Selection -->
+          <div class="product-option">
+            <label for="color">Color:</label>
+            <select id="color" class="custom-select">
+              <option value="black">Black</option>
+              <option value="brown">Brown</option>
+              <option value="red">Orange</option>
+              <option value="red">green</option>
+              <option value="red">Yollow</option>
+            </select>
+          </div>
+<!-- quantity section -->
+          <div class="product-option">
+            <label for="quantity">Quantity:</label>
+            <div class="quantity-cart">
+              <div class="quantity-control">
+                <button class="decrease" onclick="updateQuantity(-1)">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button class="increase" onclick="updateQuantity(1)">+</button>
+              </div>
+              <button class="add-to-cart"><span><i class="fa-solid fa-crown"></i></span> Add to Cart</button>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+            </div>
+          </div>
+        <div class="content-2">
+            
+          <ul class="info-list">
+            <li class="sku-item">
+              <a href="#">SKU: <span>W0243</span></a>
+              <div class="social-icons">
+                <a class="social-icon" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="social-icon" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="social-icon" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social-icon" href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </li>
+            <li><a href="#">Tags: <span>Hot, Women</span></a></li>
+            <li><a href="#">Category: <span>Dress, T-Shirt, Mini Skirt</span></a></li>
+          </ul>
           
 
-
         </div>
+
+
+        </div> 
+        </div>
+
       </div>
     </div>
   </section>
@@ -306,7 +372,23 @@
   
   <!-- ============= laghter jacket end ============= -->
 
-
+ <!-- ============== productinfo customer review start =========== -->
+<section id="review">
+  <div class="container">
+   <div class="head">
+    <h2>Product Description</h2>
+    <h3>Customer Review(1) <span>Additional Information</span></h3>
+   </div>
+<div class="content">
+  <p>Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value. Completely pursue fully tested content whereas multifunctional core competencies. Progressively scale team driven process improvements before premier functionalities. Holisticly cultivate intermandated metho <span>..............................................................</span> dologies rather than virtual technology. Monotonectally target interactive synergy without process-centric e-markets. Holisticly pursue enterprise-wide leadership skills for enterprise leadership. Collaboratively underwhelm standardized expertise after effective bandwidth. Conveniently productivate holistic collaboration and idea-sharing rather than granular strategic theme areas.
+  </p>
+  <p>Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+    Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.</p>
+</div>
+    
+  </div>
+</section>
+<!-- ============= productinfo customer review end ============= -->
 
  
     

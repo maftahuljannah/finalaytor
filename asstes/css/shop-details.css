@@ -374,12 +374,13 @@ font-size: 25px;
     color: var(--text-color);    
 }
 
+
 /* ================ SHOP-details BANNER end ============== */
 
 /* ================ Lather jacket start ============= */
 /* General Styling */
 #jacket {
-    padding: 20px 0;
+    margin-top: 90px;
   }
   
   #jacket .large-image {
@@ -405,6 +406,7 @@ font-size: 25px;
   #jacket .slider {
     display: flex;
     width: 100%; /* Adjust width as needed */
+    margin-top: 20px;
   }
   
   #jacket .slider img {
@@ -448,8 +450,242 @@ font-size: 25px;
   #jacket .slider-nav.next {
     right: 1%;
   }
+  /* content */
+  #jacket .content{
+    margin-left: 20px;
+  }
+  #jacket .content h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);  
+
+  }
+  #jacket .content h5{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color); 
+    margin-top: 10px; 
+  }
+  #jacket .content h5 span{
+    font-size: 14px;
+    color: #ff5645;
+  }
+  #jacket .content h4{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);
+    margin-top: 20px;  
+  }
+  #jacket .content h4 span{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: line-through;
+    color: var(--paragraph-color);
+    margin-left: 15px; 
+  }
+  #jacket .content p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: justify;
+    color: var(--paragraph-color);
+    width: 90%;  
+    margin-top: 10px;
+  }
+  #jacket .product-option {
+    margin: 15px 0;
+  }
   
+  #jacket .product-option label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
   
+  #jacket .product-option select,
+  #jacket .product-option input {
+    padding: 8px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 8px 0;
+  }
+  #jacket .product-option #size{
+    margin-left: 11px;
+    width: 550px;
+  }
+  #jacket .product-option #color{
+    width: 550px;
+  }
+  #jacket .discounted-price {
+    text-decoration: line-through;
+    
+    margin-left: 10px;
+  }
+ /* Flexbox container for quantity and add-to-cart button */
+ #jacket .quantity-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between quantity control and button */
+}
+
+/* Styling for Quantity Section */
+#jacket .quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#jacket .quantity-control button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jacket .quantity-control input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  pointer-events: none; /* Prevent manual editing */
+}
+
+/* Add to Cart Button */
+#jacket .add-to-cart {
+  padding: 10px 70px;
+  background-color: var(--1st-primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent wrapping */
+}
+#jacket button  span{
+  margin-right: 5px;
+}
+#jacket .product-option a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+#jacket .content-2 ul{
+  margin-top: 15px;
+}
+#jacket .content-2 ul li a{
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--text-color); 
+  margin-top: 3px;
+}
+#jacket .content-2{
+  border-top: 1px solid #e0e0e0;
+  width: 648px;
+  height: 0px;
+}
+#jacket .content-2 ul li a span{
+  font-weight: 400;
+  color: var(--paragraph-color); 
+}
+/* General list styling */
+#jacket  .info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#jacket  .info-list li {
+  display: flex;
+  justify-content: space-between; /* Ensures text and icons are on opposite ends */
+  align-items: center; /* Vertically aligns content */
+  margin-bottom: 10px;
+}
+
+/* Social icons container */
+#jacket .social-icons {
+  display: flex;
+  gap: 10px; /* Adds spacing between icons */
+}
+
+#jacket  .social-icons .social-icon i {
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+/* Hover effect for social icons */
+#jacket  .social-icons .social-icon:hover i {
+  color: #007bff; /* Change icon color on hover */
+}
 /* ================ lather jacket end ============== */
+
+/* ================ productinfo customer review start ============= */
+#review{
+  margin-top: 113px;
+}
+#review .container .head{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#review .container .head h2{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--comon-colot);
+  background-color: var(--1st-primary-color);  
+  padding: 15px 55px;  
+}
+#review .container .head h3{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--comon-colot);
+  background-color: #000;
+  padding: 15px 55px;
+}
+#review .container .head h3 span{
+  margin-left: 25px;
+}
+#review .container .content p{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: justify;
+  color: var(--paragraph-color);
+  margin-top: 40px;
+}
+#review .container .content p span{
+  color:  #fff;
+}
+/* ================ productinfo customer review end ============== */
 
 
