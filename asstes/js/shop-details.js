@@ -65,6 +65,7 @@ function showImage(imgElement) {
 // Slider navigation logic
 $(document).ready(function () {
   $('.slider').slick({
+    centerMode: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true, // Enable navigation arrows
@@ -77,12 +78,14 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
+          centerMode: true,
           slidesToShow: 3, // Adjust for tablet
         },
       },
       {
         breakpoint: 480,
         settings: {
+          centerMode: true,
           slidesToShow: 2, // Adjust for mobile
         },
       },
@@ -106,3 +109,45 @@ function updateQuantity(change) {
   if (currentQuantity < 1) currentQuantity = 1; // Minimum value is 1
   quantityInput.value = currentQuantity;
 }
+
+// related product slider
+$(function(){
+  $('.parent-product').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows:true,
+    prevArrow:`<i class="left-arrow fa-solid fa-chevron-left"></i>`,
+    nextArrow:`<i class="right-arrow fa-solid fa-chevron-right"></i>`,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+})

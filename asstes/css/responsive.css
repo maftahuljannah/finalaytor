@@ -1,21 +1,21 @@
 /* shop-detain part start */
 @media (max-width: 480px) {
-    #banner{
-        overflow: hidden;
-    }
-    #banner .child {
-      height: 300px; /* Compact height for very small screens */
-    }
-  
-    #banner .child .container h2 {
-      font-size: 22px; /* Smaller font for small devices */
-    }
-  
-    #banner .child .container h4 {
-      font-size: 10px; /* Smaller font for small devices */
-    }
+  #banner{
+      overflow: hidden;
   }
-  /* banner end */
+  #banner .child {
+    height: 300px; /* Compact height for very small screens */
+  }
+
+  #banner .child .container h2 {
+    font-size: 22px; /* Smaller font for small devices */
+  }
+
+  #banner .child .container h4 {
+    font-size: 10px; /* Smaller font for small devices */
+  }
+}
+/* banner end */
 
   /* lagther jacket start */
   /* Responsive Styles */
@@ -156,7 +156,9 @@
     }
   }
   /* lagther jacket end*/
+  
 /* ================ customer review start ============= */
+
 /* ================ Media Queries for Responsiveness ================ */
 
 /* For tablets and medium-sized devices */
