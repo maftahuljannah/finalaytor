@@ -1,0 +1,87 @@
+/* ================ compare  start ============= */
+
+/* ================ search product start ============= */
+/* Adjust the search bar for smaller screens */
+@media (max-width: 768px) {
+    #search-product .search-bar input {
+        width: 80%; /* Full width on smaller screens */
+        padding: 10px;
+        margin-bottom: 10px; /* Add spacing between input and button */
+    }
+
+    #search-product .search-bar button {
+        width: 20%; /* Full width button */
+        padding: 10px;
+        margin-top: 5px; 
+        border: none;/* Add some spacing above button */
+    }
+}
+
+/* Responsive Table Styling */
+@media (max-width: 768px) {
+    #search-product table {
+        width: 100%; /* Ensure the table fits the screen */
+    }
+
+    #search-product table thead {
+        display: none; /* Hide table headers on smaller screens */
+    }
+
+    #search-product table tbody tr {
+        display: flex;
+        flex-direction: column; /* Stack each row vertically */
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #search-product table tbody td {
+        display: flex;
+        justify-content: space-between; /* Align content evenly */
+        padding: 10px;
+        border: none; /* Remove internal borders */
+    }
+
+    #search-product table tbody td img {
+        width: 100%; /* Images take up full width */
+        height: auto; /* Maintain aspect ratio */
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+    }
+
+    #search-product table tbody td p {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    #search-product table tbody td h3 {
+        font-size: 16px; /* Adjust heading size for mobile */
+    }
+
+    #search-product .add-to-cart a {
+        width: 100%; /* Full width buttons */
+        text-align: center; /* Center text in the button */
+    }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    #search-product tbody td {
+        flex-direction: column; /* Stack content inside cells */
+        text-align: center; /* Center align text */
+    }
+
+    #search-product tbody td img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    #search-product .add-to-cart a {
+        padding: 8px 20px; /* Adjust button padding for very small screens */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+/* ================ search product end ============== */
+
+/* ================ compare end ============== */

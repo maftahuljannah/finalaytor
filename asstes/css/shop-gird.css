@@ -364,7 +364,7 @@ font-size: 25px;
     font-size: 48px;
     line-height: 121%;
     text-align: center;
-    color: var(--text-color);   
+    color: var(--comon-colot);   
 }
 #banner .child .container h4{
     font-family: var(--second-family);
@@ -372,7 +372,7 @@ font-size: 25px;
     font-size: 16px;
     line-height: 175%;
     text-align: center;
-    color: var(--text-color);    
+    color: var(--comon-colot);    
 }
 
 /* ================ SHOP-GRID BANNER end ============== */
