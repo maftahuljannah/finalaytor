@@ -23,7 +23,7 @@
     <!-- bootstrap -->
      <link rel="stylesheet" href="./asstes/css/bootstrap.min.css">
     <!-- custom css -->
-     <link rel="stylesheet" href="./asstes/css/compare.css">
+     <link rel="stylesheet" href="./asstes/css/cart.css">
      <!-- responsive css -->
       <link rel="stylesheet" href="./asstes/css/responsive.css">
 </head>
@@ -79,7 +79,7 @@
               <ul class="dropdown-menu">
             
                 <li><a class="dropdown-item" href="#">Compare</a></li>
-                <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                <li><a class="dropdown-item" href="#">Cart</a></li>
                 <li><a class="dropdown-item" href="#">Checkout</a></li>
                 <li><a class="dropdown-item" href="#">Wishlist</a></li>
                 <li><a class="dropdown-item" href="#">Page not found</a></li>
@@ -256,7 +256,7 @@
 
  <!-- ============= NAV end ============= -->
  
-<!-- ============== compare BANNER start =========== -->
+<!-- ============== cart BANNER start =========== -->
 <section id="banner">
     <div class="parent">
         <div class="child" style="background-image: url(./asstes/compare.image/bannercompare.jpg);">
@@ -267,121 +267,67 @@
           </div>
         </div>
  </section>
-  <!-- ============= compare BANNER end ============= -->
+  <!-- ============= cart BANNER end ============= -->
 
- <!-- ============== search product start =========== -->
- <section id="search-product">
-    <div class="container">
-      <div class="compare-table">
-        <!-- Search Bar -->
-        <div class="search-bar">
-          <input type="text" placeholder="Search Product...">
-          <button class="search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-  
-        <!-- Comparison Table -->
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th><h3>Remove</h3></th>
-              <th>
-                <a href="#"><i class="fa-solid fa-trash"></i></a>
-              </th>
-              <th>
-                <a href="#"><i class="fa-solid fa-trash"></i></a>
-              </th>
-              <th>
-                <a href="#"><i class="fa-solid fa-trash"></i></a>
-              </th>
-              <th>
-                <a href="#"><i class="fa-solid fa-trash"></i></a>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="product">
-              <td class="test"><h3>Products</h3></td>
-              <td><img src="./asstes/compare.image/jacket1.jpg" alt="Product 1" />
-                <p>Jacket Hoodie Sweater</p>
+   <!-- ============== shoppingi-cart start =========== -->
+   <section class="shopping-cart">
+    <div class="cart-container">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Price/Unit</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./asstes/compare.image/jacket2.jpg" alt="Product Image"></td>
+            <td>Jacket Hoodie Sweater</td>
+            <td>$130.00</td>
+            <td>
+              <div class="quantity">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+              </div>
             </td>
-              <td><img src="./asstes/compare.image/jacket13.png" alt="Product 2" />
-                <p>Bomber Jacket</p>
-            </td>
-              <td><img src="./asstes/compare.image/jacket2.jpg" alt="Product 3" />
-                <p>Hoodie T-Shirt</p>
-            </td>
-              <td><img src="./asstes/compare.image/jacket7.jpg" alt="Product 4" />
-                <p>Men Long Shirt</p>
-            </td>
-            </tr>
-            <tr>
-              <td class="des"><h3>Description</h3></td>
-              <td>
-               <p> Assertively incentivize multimedia based collaboration and idea-share</p>
-              </td>
-              <td>
-               <p> Assertively incentivize multimedia based collaboration and idea-share</p>
-              </td>
-              <td>
-                <p> Assertively incentivize multimedia based collaboration and idea-share</p>
-              <td>
-                <p> Assertively incentivize multimedia based collaboration and idea-share</p>
-              </td>
-            </tr>
-            <tr>
-              <td><h3>Price</h3></td>
-              <td><p>$130</p></td>
-              <td><p>$220</p></td>
-              <td><p>$100</p></td>
-              <td><p>$80</p></td>
-            </tr>
-            <tr>
-                <td><h3>Color</h3></td>
-                <td><p>Red</p></td>
-                <td><p>Black</p></td>
-                <td><p>Gray</p></td>
-                <td><p>Blue & Brown</p></td>
-              </tr>
-              <tr class="rating">
-                <td><h3>Ratings</h3></td>
-                <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>(5)
-                </td>
-                <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>(5)
-                </td>
-                <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>(5)
-                </td>
-                <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>(5)
-                </td>
-              </tr>
-              <tr class="stock">
-                <td><h3>Stock</h3></td>
-                <td><span><i class="fa-solid fa-check"></i></span>In Stock</td>
-                <td><span><i class="fa-solid fa-check"></i></span>In Stock</td>
-                <td><span><i class="fa-solid fa-check"></i></span>In Stock</td>
-                <td><span><i class="fa-solid fa-check"></i></span> In Stock</td>
-              </tr>
-              <tr class="add-to-cart">
-                <td><h3>Add to Cart</h3></td>
-                <td><a href="#">Add to Cart</a></td>
-                <td><a href="#">Add to Cart</a></td>
-                <td><a href="#">Add to Cart</a></td>
-                <td><a href="#">Add to Cart</a></td>
-              </tr>
-          </tbody>
-        </table>
+            <td>$130.00</td>
+            <td><button class="remove-btn"><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="coupon-section">
+        <input type="text" placeholder="Enter coupon code">
+        <button class="submit-btn">Submit ➔</button>
+      </div>
+      <div class="cart-actions">
+        <button class="update-cart-btn">Update Cart ➔</button>
+        <button class="continue-shopping-btn">Continue Shopping ➔</button>
       </div>
     </div>
-  </section>
-  
-<!-- ============= search product end ============= -->
 
- <!-- ============== FOOTER start =========== -->
+    <div class="cart-total">
+      <h3>Cart Total:</h3>
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$130.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td class="total-price">$130.00</td>
+        </tr>
+      </table>
+      <button class="checkout-btn">Proceed To Checkout ➔</button>
+    </div>
+  </section>
+  <!-- ============= shopping-cart end ============= -->
+
+   <!-- ============== FOOTER start =========== -->
  <section id="footer">
     <div class="container">
       <div class="row">
@@ -485,6 +431,6 @@
  <!-- bootstrap -->
   <script src="./asstes/js/bootstrap.bundle.min.js"></script>
    <!-- custom js -->
-    <script src="./asstes/js/compare.js"></script>
+    <script src="./asstes/js/cart.js"></script>
 </body>
-</html>              
+</html>                  
